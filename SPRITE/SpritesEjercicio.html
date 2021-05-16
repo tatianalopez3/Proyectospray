@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprite Ejercicio</title>
+    <style>
+        body{
+            background-color: #00953e; 
+            margin:40px auto;
+            font-family:Arial, Helvetica, sans-serif;
+            width:800px;
+        }
+        section#SpriteTitulo{
+            margin:40px auto;
+            background:url(img/titulo.jpeg);
+            height: 110px;
+            width: 150px;
+        }
+        section#SpriteTitulo.SPT{background-position:-10px -355px;}
+
+        ul.table{
+            list-style: none;
+            padding-left:0px ;
+        }
+        ul.table li{
+            display: inline-block;
+        }
+        ul.table li a:Link,
+        ul.table li a:Visited{
+            color:#fff;
+            background-color: #1a6125;
+            display:block;
+            padding:10px;
+            margin:8px;
+            text-decoration:none;
+            text-align: center;
+            width: 110px;
+            padding: 10px 15px;
+            border-bottom: 4px solid rgb(204, 204, 204);
+        }
+        ul.table li a:Hover{
+            background-color: #222121;
+            border-bottom: 4px solid #d9ff00;
+        }
+
+        section{
+            background-color: #1a6125;
+            height: 200px;
+            width: 790px;
+        }
+        section div{
+            display: inline-block;
+            width: 205px;
+            margin:15px auto;
+            margin-left: 40px;
+        }        
+        div.caja1 section#SpriteBarra1.SPB1{
+            background:url(img/sprite.jpg);
+            border: 2px solid #777;
+            height: 165px;
+            width: 200px;
+        }
+        section div.caja1 section#SpriteBarra1.SPB1 h3{
+            background-color: rgba(180, 178, 178, 0.418);
+            margin: 0px;
+            padding: 5px;
+            text-align: center;
+        }
+        section div.caja1 section#SpriteBarra1.SPB1 h3:hover{
+            background-color: rgba(256, 256, 256, 0.6);
+        }
+        section div.caja1 section#SpriteBarra1.SPB1{background-position:-445px -5px;}
+
+        div.caja2 section#SpriteBarra2.SPB2{
+            background:url(img/sprite.jpg);
+            border: 2px solid #777;
+            height: 165px;
+            width: 200px;
+        }
+        section div.caja2 section#SpriteBarra2.SPB2 h3{
+            background-color: rgba(180, 178, 178, 0.418);
+            margin: 0px;
+            padding: 5px;
+            text-align: center;
+        }
+        section div.caja2 section#SpriteBarra2.SPB2 h3:hover{
+            background-color: rgba(256, 256, 256, 0.6);
+        }
+        section div.caja2 section#SpriteBarra2.SPB2{background-position:-445px -5px;}
+
+        div.caja3 section#SpriteBarra3.SPB3{
+            background:url(img/sprite.jpg);
+            border: 2px solid #777;
+            height: 165px;
+            width: 200px;
+        }
+        section div.caja3 section#SpriteBarra3.SPB3 h3{
+            background-color: rgba(180, 178, 178, 0.418);
+            margin: 0px;
+            padding: 5px;
+            text-align: center;
+        }
+        section div.caja3 section#SpriteBarra3.SPB3 h3:hover{
+            background-color: rgba(256, 256, 256, 0.6);
+        }
+        section div.caja3 section#SpriteBarra3.SPB3{background-position:-445px -5px;}
+
+        div.fila1{
+            color:  rgb(255, 0, 0);
+            background-color: #1a6125;
+            height: 610px;
+            width:790px;
+        }
+        div.fila1 div{
+            background-color: #ffffff;
+            width: 750px;
+            height: 180px;
+            margin-left:20px;
+
+        }
+        div.fila1 div.f1 div{
+            display:inline-block;
+            margin-left: 40px;
+            width: 220px;
+            height: 180px;
+        }
+        div.fila1 div.f1 div#SpriteFila1.SPF1{
+            background:url(img/logo.jpeg);
+            height: 100px;
+            width: 150px;
+        }
+        div.fila1 div.f1 div#SpriteFila1.SPF1{background-position:-215px -410px;}
+
+        div.fila1 div.f1 div#SpriteFila1-2.SPF1-2 {
+            background:url(img/lata.jpeg);
+            height: 140px;
+            width: 150px;
+        }
+        div.fila1 div.f1 div#SpriteFila1-2.SPF1-2{background-position:-10px -170px;}
+
+        div.fila1 div.f1 div p:hover{color:rgb(0, 0, 0)}
+        div.fila1 div.f1 div p{
+            width: 250px;
+            text-align:justify;
+            color:seagreen;
+        }
+
+        div.fila1 div.f2 div{
+            display:inline-block;
+            margin-left: 40px;
+            width: 220px;
+            height: 180px;
+        }
+        div.fila1 div.f2 div#SpriteFila2.SPF2{
+            background:url(img/logo.jpeg);
+            height: 100px;
+            width: 150px;
+        }
+        div.fila1 div.f2 div#SpriteFila2.SPF2{background-position:-215px -410px;}
+
+        div.fila1 div.f2 div#SpriteFila2-1.SPF2-1 {
+            background:url(img/lata.jpeg);
+            height: 140px;
+            width: 150px;
+        }
+        div.fila1 div.f2 div#SpriteFila2-1.SPF2-1{background-position:-10px -170px;}
+
+        div.fila1 div.f2 div p:hover{color:rgb(0, 0, 0) }
+        div.fila1 div.f2 div p{
+            width: 250px;
+            text-align:justify;
+            color: seagreen;
+        }
+
+        div.fila1 div.f3 div{
+            display:inline-block;
+            margin-left: 40px;
+            width: 220px;
+            height: 180px;
+        }
+        div.fila1 div.f3 div#SpriteFila3.SPF3{
+            background:url(img/logo.jpeg);
+            height: 100px;
+            width: 150px;
+        }
+        div.fila1 div.f3 div#SpriteFila3.SPF3{background-position:-215px -410px;}
+
+        div.fila1 div.f3 div#SpriteFila3-1.SPF3-1 {
+            background:url(img/lata.jpeg);
+            height: 140px;
+            width: 150px;
+        }
+        div.fila1 div.f3 div#SpriteFila3-1.SPF3-1{background-position:-10px -170px;}
+
+        div.fila1 div.f3 div p:hover{color:black;}
+        div.fila1 div.f3 div p{
+            width: 250px;
+            text-align:justify;
+            color:seagreen;
+
+        }
+
+        section.fila2{
+            background-color: #ffffff;
+            width: 790px;
+            height: 255px;
+        }
+        section.fila2 div#SpriteMenu1.SPM1{
+            margin-left: 300px;
+            background:url(img/foot.jpeg);
+            height: 150px;
+            width: 230px;
+        }
+        section.fila2 div#SpriteMenu1.SPM1{background-position:-420px -350px;}
+
+        section.fila2 ul.table2{
+            list-style: none;
+            padding-left:0px ;
+        }
+        section.fila2 ul.table2 li{
+            display: inline-block;
+        }
+        section.fila2 ul.table2 li a:Link,
+        section.fila2 ul.table2 li a:Visited{
+            color:rgb(0, 0, 0);
+            display:block;
+            padding:10px;
+            margin: 6px;
+            text-decoration:none;
+            text-align: center;
+            width: 110px;
+            padding: 10px 15px;
+        }
+        section.fila2 ul.table2 li a:Hover{
+            border-bottom: 4px solid  #228531;
+        }
+
+
+    </style>
+</head>
+<body>
+    <section id="SpriteTitulo" class="SPT"></section>
+
+    <ul class="table">
+        <li><a href="">INICIO</a></li>
+        <li><a href="">NOSOTROS</a></li>
+        <li><a href="">PORTAFOLIO</a></li>
+        <li><a href="">SERVICIOS</a></li>
+        <li><a href="">CONTACTOS</a></li>
+    </ul> 
+
+    <section>
+        <div class="caja1">
+            <section id="SpriteBarra1" class="SPB1">
+                <h3>Sprite 01</h3>
+                
+            </section>
+        </div>
+        <div class="caja2">
+            <section id="SpriteBarra2" class="SPB2">
+                <h3>Sprite 02</h3>
+            </section>
+        </div>
+        <div class="caja3">
+            <section id="SpriteBarra3" class="SPB3">
+                <h3>Sprite 03</h3>
+            </section>
+        </div>
+    </section>
+    <br>
+    <div class="fila1">
+        <br>
+        <div class="f1">
+            <div id="SpriteFila1" class="SPF1"></div>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing 
+                    elit. Ducimus error asperiores expedita accusamus, eveniet 
+                    ullam voluptas nostrum delectus ad dignissimos iusto, iste                         cum vel perspiciatis est! Repudiandae ducimus tempore 
+                    consequatur.
+               </p>
+            </div>    
+            <div id="SpriteFila1-2" class="SPF1-2"></div>
+        </div>
+        <br>
+        <div class="f2">
+            <div id="SpriteFila2" class="SPF2"></div>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing 
+                    elit. Ducimus error asperiores expedita accusamus, eveniet 
+                    ullam voluptas nostrum delectus ad dignissimos iusto, iste                         cum vel perspiciatis est! Repudiandae ducimus tempore 
+                    consequatur.
+               </p>
+            </div>    
+            <div id="SpriteFila2-1" class="SPF2-1"></div>
+        </div>
+        <br>
+        <div class="f3">
+            <div id="SpriteFila3" class="SPF3"></div>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing 
+                    elit. Ducimus error asperiores expedita accusamus, eveniet 
+                    ullam voluptas nostrum delectus ad dignissimos iusto, iste                         cum vel perspiciatis est! Repudiandae ducimus tempore 
+                    consequatur.
+               </p>
+            </div>    
+            <div id="SpriteFila3-1" class="SPF3-1"></div>
+        </div>
+    </div>
+    <br>
+    <section class="fila2">
+        <div id="SpriteMenu1" class="SPM1"></div>
+        <ul class="table2">
+            <li><a href="">INICIO</a></li>
+            <li><a href="">NOSOTROS</a></li>
+            <li><a href="">PORTAFOLIO</a></li>
+            <li><a href="">SERVICIOS</a></li>
+            <li><a href="">CONTACTOS</a></li>
+        </ul>
+    </section>
+</body>
+</html>
